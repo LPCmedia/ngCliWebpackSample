@@ -17,7 +17,26 @@
     "lib": [
       "es2018",
       "dom"
-    ]
+    ],
+    "paths": {
+      "@activia/ngx-components": ["packages/ngx-components/public_api.ts"],
+      "@activia/ngx-components/*": ["packages/ngx-components"],
+      "@activia/ngx-charts": ["packages/ngx-charts/src/public_api.ts"],
+      "@activia/ngx-charts/*": ["packages/ngx-charts/*"],
+
+      "@my-scope/my-lib-a": [
+        "projects/my-lib-a/src/public_api"
+      ],
+      "@my-scope/my-lib-a/*": [
+        "projects/my-lib-a/*"
+      ],
+      "@my-scope/my-lib-b": [
+        "projects/my-lib-b/src/public_api"
+      ],
+      "@my-scope/my-lib-b/*": [
+        "projects/my-lib-b/*"
+      ]
+    }
   },
   "angularCompilerOptions": {
     "fullTemplateTypeCheck": true,

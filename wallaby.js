@@ -73,6 +73,7 @@ module.exports = function(wallaby) {
       /* Initialize Test Environment for Wallaby */
       [path.basename(__filename)]: file => `
  import '@angular-devkit/build-angular/src/angular-cli-files/models/jit-polyfills';
+ import 'zone.js/dist/zone';
  import 'zone.js/dist/zone-testing';
  import { getTestBed } from '@angular/core/testing';
  import { BrowserDynamicTestingModule,  platformBrowserDynamicTesting} from '@angular/platform-browser-dynamic/testing';
@@ -144,7 +145,7 @@ module.exports = function(wallaby) {
           const alias =  project.name.replace(/([a-zA-Z])(?=[A-Z])/g, '$1-').toLowerCase();
           result[alias] = path.join(wallaby.projectCacheDir, project.sourceRoot, 'public-api');
           return result;
-        }, {})
+        }, {}),
       }
     }),
 

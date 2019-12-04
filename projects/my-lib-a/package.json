@@ -1,0 +1,25 @@
+{
+  "name": "@my-scope/my-lib-a",
+  "version": "0.0.1",
+  "scripts": {
+    "build":  "ng build"
+  },
+  "peerDependencies": {
+    "@angular/common": "^8.2.7",
+    "@angular/core": "^8.2.7"
+  },
+  "main": "dist/bundles/my-scope-my-lib-a.umd.js",
+  "module": "dist/fesm5/my-scope-my-lib-a.js",
+  "es2015": "dist/fesm2015/my-scope-my-lib-a.js",
+  "esm5": "dist/esm5/my-scope-my-lib-a.js",
+  "esm2015": "dist/esm2015/my-scope-my-lib-a.js",
+  "fesm5": "dist/fesm5/my-scope-my-lib-a.js",
+  "fesm2015": "dist/fesm2015/my-scope-my-lib-a.js",
+  "typings": "dist/my-scope-my-lib-a.d.ts",
+  "metadata": "dist/my-scope-my-lib-a.metadata.json",
+  "sideEffects": false,
+  "files": [
+    "dist",
+    "_themes.scss"
+  ]
+}
