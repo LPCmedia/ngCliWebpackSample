@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { MyLibBService } from '@my-scope/my-lib-b';
 
 @Component({
   selector: 'lib-my-lib-a',
@@ -11,7 +12,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MyLibAComponent implements OnInit {
 
-  constructor() { }
+  constructor(private myLibBService: MyLibBService) { }
 
   ngOnInit() {
   }

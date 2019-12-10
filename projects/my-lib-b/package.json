@@ -4,9 +4,6 @@
   "scripts": {
     "build":  "ng build --project my-lib-b"
   },
-  "dependencies": {
-    "@my-scope/my-lib-a": "0.0.1"
-  },
   "peerDependencies": {
     "@angular/common": "^8.2.7",
     "@angular/core": "^8.2.7"
